@@ -1,0 +1,64 @@
+.wrapper {
+  width: 400px;
+  height: 700px;
+  background-color: grey;
+}
+
+.infoPanel {
+  border: 1px solid black;
+  width: 95%;
+  margin: auto;
+  height: 30px;
+  font-size: 20px;
+  color: rgb(104, 4, 4);
+}
+
+.infoH2 {
+  margin: 0;
+}
+
+.moneyContributed {
+  border: 1px solid black;
+  width: 95%;
+  height: 30px;
+  margin: auto;
+  display: flex;
+  font-size: 25px;
+  justify-content: space-around;
+  align-items: center;
+
+  button {
+    background-color: royalblue;
+    border: none;
+    outline: none;
+    width: 100px;
+    height: 90%;
+    cursor: pointer;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+  }
+}
+
+.contributedH2 {
+  margin-bottom: 0;
+}
+
+.productsVM {
+  width: 200px;
+  height: 465px;
+  border: 1px solid black;
+}
+
+.moneyVM {
+  width: 120px;
+  height: 450px;
+  border: 1px solid black;
+}
+
+.mainBody {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-around;
+}

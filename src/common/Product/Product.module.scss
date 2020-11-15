@@ -1,0 +1,19 @@
+.wrapper {
+  width: 90%;
+  border: 1px solid black;
+  margin: 8px auto;
+  height: 100px;
+  cursor: pointer;
+  background-color: inherit;
+  outline: none;
+
+  h4,
+  p {
+    margin: 5px;
+  }
+}
+
+.wrapper:hover {
+  background-color: cadetblue;
+  transform: scale(1.05);
+}
