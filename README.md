@@ -1,6 +1,6 @@
-# Vending-Machine ([тестовое задание]) 
+# Vending-Machine [Тестовое](https://vending-machine-iota.vercel.app/) 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 Тестовое задание 
 Техническое задание: Разработка виртуального аппарата по продаже кофе (Vending Machine)
 Описание: 
