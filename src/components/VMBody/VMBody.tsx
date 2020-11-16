@@ -24,10 +24,11 @@ const connector = connect(mapStateToProps, mapDispatch);
 type PropsFromRedux = ConnectedProps<typeof connector>;
 type Props = PropsFromRedux;
 
-const VMBody: React.FC<Props> = ({ products, moneyVM, sumVM, buyProduct, statePuy }) => {
+const VMBody: React.FC<Props> = ({ products, moneyVM, sumVM, buyProduct, statePuy, addshortСhange }) => {
   const { tea, coffee, coffeeWitnMilk, juice } = products;
   const { oneRuCoin, twoRuCoin, fiveRuCoin, tenRuCoin } = moneyVM;
   const info = statePuy === null ? 'Ожидание' : statePuy ? 'Спасибо за покупку' : 'Недостаточно денег';
+
   return (
     <div className={style.wrapper}>
       <h2>Vending Machine</h2>
@@ -36,7 +37,9 @@ const VMBody: React.FC<Props> = ({ products, moneyVM, sumVM, buyProduct, statePu
       <h4 className={style.contributedH2}>Внесенная сумма</h4>
       <section className={style.moneyContributed}>
         <span>{sumVM}</span>
-        <button type="button">Сдача</button>
+        <button type="button" onClick={() => addshortСhange(sumVM)}>
+          Сдача
+        </button>
       </section>
       <div className={style.mainBody}>
         <section className={style.productsVM}>
